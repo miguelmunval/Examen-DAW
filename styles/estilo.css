@@ -138,32 +138,46 @@ color: #daa520;}
   color: #daa520;}
 /* estilo de la galería */
 #future {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  padding: 0 0.1%;
 }
-#future picture {
+
+#fotos {
+  padding: auto;
+  display: flex;
+  padding-left: 15%;
+}
+
+.tercio {width: 23%;
+margin: 1.5%;
+padding: 1%;
+box-sizing: border-box;/* en el width entra padding y borde */
+border: 1px solid black;
+box-shadow: 1.5px 1.5px 30px 10px#daa520;
+}
+
+.tercio img {
+  width: 100%;
+}
+
+.tercio img:hover {opacity: 1;}
+
+.tercio h2 {font-family: titulo;
+  color:#2ebdbb;
   text-align: center;
-  box-shadow: 
-  0 -6px 10px #daa520,
-  0 6px 10px #daa520,
-  3px 0 10px #daa520,
-  -3px -0 10px #daa520;
-  margin: 4%;
-  padding: 2%;
+  padding-bottom: 10%;
 }
-
-#future img {
-  width: 100%;
+.tercio p {
+  background-color: #2ebdbb;
+  color: black;
+  border: 2px solid gray;
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
+  font-size: 0.8em;
 }
-
-#future button {
-  background-color: #2ec2bd;
-  cursor: pointer;
-}
-
-#future button:hover {
-  background-color: #259b97;
+.resetear {
+  display: inline-block;
 }
 /* estilo del footer */
 footer {
@@ -179,17 +193,23 @@ footer p {
   color: #2ebdbb;
 }
 /* responsive */
-@media screen and (max-width: 1100px) {
-  #future {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 @media only screen and (max-width:800px){
-  #future {
-    grid-template-columns: 1fr;
+  .tercio {width: 50%;
+  margin: 2%;}
+  #fotos {
+    padding: auto;
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   }
-  @media only screen and (max-width:500px) {
+  @media only screen and (max-width:600px) {
   .tercio {width: 90%;
   margin: 5%;}
+  #fotos {
+    padding: auto;
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
   }
