@@ -137,7 +137,7 @@ color: #daa520;}
 #prototipos p::first-letter {font-size: 1.8em;/* selector nuevo */
   color: #daa520;}
 /* estilo de la galería */
-#galeria picture {
+#future picture {
   text-align: center;
   box-shadow: 
   0 -6px 10px #daa520,
@@ -148,16 +148,16 @@ color: #daa520;}
   padding: 2%;
 }
 
-#galeria img {
+#future img {
   width: 100%;
 }
 
-#galeria button {
+#future button {
   background-color: #2ec2bd;
   cursor: pointer;
 }
 
-#galeria button:hover {
+#future button:hover {
   background-color: #259b97;
 }
 /* estilo del footer */
