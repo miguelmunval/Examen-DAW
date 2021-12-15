@@ -1,0 +1,207 @@
+/* estilo de mi examen */
+@font-face {
+  font-family: 'titulo';
+  src: url('../fonts/LazenbyCompLiquid.ttf');
+}
+@font-face {
+  font-family: 'texto';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* estilo de la barra de navegación */
+.topnav {
+  overflow: hidden;
+  background-color: #3d3d3d;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #2ebdbb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: titulo;
+}
+
+.topnav a:hover {
+  background-color: #daa520;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #3d3d3d;
+  color: #2ebdbb;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* estilo de la hero */
+#hero {background-image: url("../images/hero.jpg");
+  background-size: cover;/* estira o encoge la imagen para que ocupe la hero */
+  background-position: 66%;/* para que recorte por los lados */
+  height: 95vh;/* 100vh es el alto del dispositivo */
+  position: relative;/* para poder posicionar el título */
+}
+  #hero h1 {position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-family: titulo;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  color: #2ebdbb;
+  padding: 10px;
+  box-shadow: 3px -3px 10px#daa520;
+  border-radius: 10px;
+}
+/* estilo de la introducción */
+#introduction {font-family: texto;
+  color: #2ebdbb;
+  padding: 1% 8%;
+  text-align: justify;
+  font-size: 1.2em;
+}
+  
+#introduction h1 {font-family: titulo;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: -10px 10px 25px#daa520;
+  border-collapse: collapse;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 1%;
+  border-radius: 10px;
+  background-size: cover;
+  width: fit-content;
+  margin: auto;
+}
+#procesador {width: 50%;/* como es grande, que ocupe solo parte */
+  float: right;/* para que la imagen quede rodeada del texto */
+  margin: 15px;
+}
+  
+#introduction p::first-letter {font-size: 1.8em;/* selector nuevo */
+color: #daa520;}
+/* estilo de prototipes */
+#prototipos {font-family: texto;
+  color: #2ebdbb;
+  padding: 1% 8%;
+  text-align: justify;
+  font-size: 1.2em;
+}
+  
+#prototipos h1 {font-family: titulo;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: -10px 10px 25px#daa520;
+  border-collapse: collapse;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 1%;
+  border-radius: 10px;
+  background-size: cover;
+  width: fit-content;
+  margin: auto;
+}
+#prototipos p::first-letter {font-size: 1.8em;/* selector nuevo */
+  color: #daa520;}
+/* estilo de la galería */
+#future {
+  margin: auto;
+  padding: 0 0.1%;
+}
+
+#fotos {
+  padding: auto;
+  display: flex;
+  padding-left: 15%;
+}
+
+.tercio {width: 23%;
+margin: 1.5%;
+padding: 1%;
+box-sizing: border-box;/* en el width entra padding y borde */
+border: 1px solid black;
+box-shadow: 1.5px 1.5px 30px 10px#daa520;
+}
+
+.tercio img {
+  width: 100%;
+}
+
+.tercio img:hover {opacity: 1;}
+
+.tercio h2 {font-family: titulo;
+  color:#2ebdbb;
+  text-align: center;
+  padding-bottom: 10%;
+}
+.tercio p {
+  background-color: #2ebdbb;
+  color: black;
+  border: 2px solid gray;
+  width: fit-content;
+  margin: auto;
+  padding: 1%;
+  font-size: 0.8em;
+}
+.resetear {
+  display: inline-block;
+}
+/* estilo del footer */
+footer {
+  width: 80%;
+  margin: auto;
+  padding: 0.3% 0;
+  box-sizing: border-box;/* en el width entra padding y borde */
+  border: 1px solid black;
+  box-shadow: 1.5px 1.5px 30px 10px#daa520;
+}
+footer p {
+  text-align: center;
+  color: #2ebdbb;
+}
+/* responsive */
+@media only screen and (max-width:800px){
+  .tercio {width: 46%;
+  margin: 2%;}
+  #fotos {
+    padding: auto;
+    padding-left: 1px;
+  }
+  }
+  @media only screen and (max-width:500px) {
+  .tercio {width: 90%;
+  margin: 5%;}
+  }
