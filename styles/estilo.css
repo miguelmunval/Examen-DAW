@@ -174,12 +174,14 @@ footer p {
   color: #2ebdbb;
 }
 /* responsive */
+@media screen and (max-width: 1100px) {
+  #future {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media only screen and (max-width:800px){
-  .tercio {width: 46%;
-  margin: 2%;}
-  #fotos {
-    padding: auto;
-    padding-left: 1px;
+  #future {
+    grid-template-columns: 1fr;
   }
   }
   @media only screen and (max-width:500px) {
