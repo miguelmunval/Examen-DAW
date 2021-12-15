@@ -106,6 +106,12 @@ body {
   width: fit-content;
   margin: auto;
 }
+#introduction p {
+  padding-top: 3%;
+  font-size: 1.3em;
+  text-align: justify;
+  letter-spacing: 0.2px;
+}
 #procesador {width: 50%;/* como es grande, que ocupe solo parte */
   float: right;/* para que la imagen quede rodeada del texto */
   margin: 15px;
@@ -203,7 +209,7 @@ footer p {
     padding-right: 15%;
   }
   }
-  @media only screen and (max-width:600px) {
+  @media only screen and (max-width:500px) {
   .tercio {width: 90%;
   margin: 5%;}
   #fotos {
