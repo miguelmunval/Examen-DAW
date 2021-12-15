@@ -208,7 +208,7 @@ footer p {
   margin: 5%;}
   #fotos {
     padding: auto;
-    display: flex;
+    display: block;
     padding-left: 15%;
     padding-right: 15%;
   }
