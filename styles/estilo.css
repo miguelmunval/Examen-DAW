@@ -137,6 +137,11 @@ color: #daa520;}
 #prototipos p::first-letter {font-size: 1.8em;/* selector nuevo */
   color: #daa520;}
 /* estilo de la galería */
+#future {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 #future picture {
   text-align: center;
   box-shadow: 
